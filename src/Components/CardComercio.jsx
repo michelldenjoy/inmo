@@ -108,7 +108,7 @@ const CardComercio = ({ data }) => {
         <div className="flex flex-col sm:flex-row gap-3 pt-6 border-t border-gray-100">
           <Link
             to={`/comercios/${data.id}`}
-            className="group flex items-center justify-center gap-2 bg-white text-gray-700 px-6 py-3 rounded-lg text-sm font-medium border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-200 hover:shadow-sm"
+            className="group flex items-center justify-center gap-2 bg-gradient-to-tr from-gold-200 to-gold-100 text-gray-700 px-6 py-3 rounded-lg text-sm font-medium border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-all duration-200 hover:shadow-sm"
           >
             <Eye size={16} className="group-hover:scale-110 transition-transform duration-200" />
             <span>Ver detalles</span>

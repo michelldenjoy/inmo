@@ -22,7 +22,7 @@ const FiltroComercios = () => {
   const [ordenarPor, setOrdenarPor] = useState("relevancia");
 
   const comerciosFiltrados = allComercios.filter((comercio) => {
-    // Si "mostrarTodos" está activo, no aplicar filtros
+    
     if (mostrarTodos) return true;
 
     return (
@@ -34,7 +34,7 @@ const FiltroComercios = () => {
     );
   });
 
-  // Función de ordenamiento
+  // Función de orden
   const comerciosOrdenados = [...comerciosFiltrados].sort((a, b) => {
     switch (ordenarPor) {
       case "precio-asc":
@@ -53,16 +53,16 @@ const FiltroComercios = () => {
   const clearFilters = () => {
     setEstado("");
     setPlanta("");
-    setMetrosMin(5); // Actualizado
-    setPrecioMax(2000); // Actualizado
+    setMetrosMin(5); 
+    setPrecioMax(2000); 
     setMostrarTodos(false);
   };
 
   const hasActiveFilters =
     estado !== "" ||
     planta !== "" ||
-    metrosMin !== 5 || // Actualizado
-    precioMax !== 2000; // Actualizado
+    metrosMin !== 5 || 
+    precioMax !== 2000; 
 
   return (
     <section className="px-4 max-w-7xl mx-auto">
@@ -79,7 +79,7 @@ const FiltroComercios = () => {
         </p>
       </div>
 
-      {/* BARRA DE FILTROS PREMIUM */}
+      {/*FILTROS*/}
       <div className="bg-white border-2 border-elegant-gray-200 rounded-2xl shadow-elegant-lg hover:shadow-elegant transition-all duration-300 mb-8 lg:mb-12 overflow-hidden">
         {/* Header del filtro */}
         <div className="bg-gradient-to-r from-elegant-gray-50 to-white p-4 sm:p-6 border-b-2 border-gold-200">
@@ -125,7 +125,7 @@ const FiltroComercios = () => {
           </div>
         </div>
 
-        {/* Filtros principales */}
+        {/* Campos del filtro */}
         <div
           className={`p-4 sm:p-6 ${
             isFilterOpen ? "block" : "hidden md:block"
@@ -168,7 +168,7 @@ const FiltroComercios = () => {
               </select>
             </div>
 
-            {/* METROS CUADRADOS MINIMOS - ACTUALIZADO */}
+            {/* METROS CUADRADOS MINIMOS */}
             <div className="space-y-2">
               <label className="flex items-center gap-2 text-sm font-medium text-black">
                 <Ruler size={16} className="text-gold-600" />
@@ -200,7 +200,7 @@ const FiltroComercios = () => {
               </div>
             </div>
 
-            {/* Precio - ACTUALIZADO */}
+            {/* Precio */}
             <div className="space-y-2">
               <label className="flex items-center gap-2 text-sm font-medium text-black">
                 <Euro size={16} className="text-gold-600" />

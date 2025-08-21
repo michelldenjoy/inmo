@@ -23,7 +23,7 @@ const FiltroViviendas = () => {
   const [ordenarPor, setOrdenarPor] = useState("relevancia");
 
   const viviendasFiltradas = allViviendas.filter((vivienda) => {
-    // Si "mostrarTodas" está activo, no aplicar filtros
+    
     if (mostrarTodas) return true;
 
     return (
@@ -37,7 +37,7 @@ const FiltroViviendas = () => {
     );
   });
 
-  // Función de ordenamiento
+  // Función de orden
   const viviendasOrdenadas = [...viviendasFiltradas].sort((a, b) => {
     switch (ordenarPor) {
       case "precio-asc":
@@ -66,7 +66,7 @@ const FiltroViviendas = () => {
     estado !== "" ||
     habitaciones !== "" ||
     banos !== "" ||
-    metrosMin !== 5 || // Actualizado
+    metrosMin !== 5 || 
     precioMax !== 2000;
 
   return (
@@ -84,7 +84,7 @@ const FiltroViviendas = () => {
         </p>
       </div>
 
-      {/* BARRA DE FILTROS PREMIUM */}
+      {/* FILTROS*/}
       <div className="bg-white border-2 border-elegant-gray-200 rounded-2xl shadow-elegant-lg hover:shadow-elegant transition-all duration-300 mb-8 lg:mb-12 overflow-hidden">
         {/* Header del filtro */}
         <div className="bg-gradient-to-r from-elegant-gray-50 to-white p-4 sm:p-6 border-b-2 border-gold-200">
@@ -132,7 +132,7 @@ const FiltroViviendas = () => {
           </div>
         </div>
 
-        {/* Filtros principales */}
+        {/* Campos del filtro */}
         <div
           className={`p-4 sm:p-6 ${
             isFilterOpen ? "block" : "hidden md:block"
@@ -197,7 +197,7 @@ const FiltroViviendas = () => {
               </select>
             </div>
 
-            {/* Metros cuadrados MÍNIMOS - ACTUALIZADO */}
+            {/* METROS CUADRADOS MÍNIMOS - ACTUALIZADO */}
             <div className="space-y-2">
               <label className="flex items-center gap-2 text-sm font-medium text-black">
                 <Ruler size={16} className="text-gold-600" />
@@ -229,7 +229,7 @@ const FiltroViviendas = () => {
               </div>
             </div>
 
-            {/* Precio - ACTUALIZADO */}
+            {/* Precio */}
             <div className="space-y-2">
               <label className="flex items-center gap-2 text-sm font-medium text-black">
                 <Euro size={16} className="text-gold-600" />
@@ -279,10 +279,10 @@ const FiltroViviendas = () => {
                   <span className="hidden sm:inline">Limpiar Filtros</span>
                 </button>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2"> //JS//
                 {estado && (
                   <span className="inline-flex items-center gap-1 bg-gold-100 text-black border border-gold-300 px-3 py-1 rounded-full text-sm">
-                    Estado: {estado}
+                    Estado: {estado} 
                     <button onClick={() => setEstado("")}>
                       <X size={14} className="hover:text-gold-600" />
                     </button>

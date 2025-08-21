@@ -79,7 +79,7 @@ const Hero = () => {
           <Link to="/viviendas" className="group w-full sm:w-auto">
             <button className="w-full sm:w-auto relative overflow-hidden bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:bg-transparent hover:text-white transition-all duration-500 border border-transparent hover:border-white/30 hover:backdrop-blur-sm min-w-0 sm:min-w-[180px]">
               <span className="relative z-10 flex items-center justify-center gap-2 text-sm sm:text-base">
-                <span className="hidden sm:inline">Residencias exclusivas</span>
+                <span className="hidden sm:inline">Viviendas disponibles</span>
                 <span className="sm:hidden">Residencias</span>
                 <ChevronRight size={16} className="sm:w-[18px] sm:h-[18px] group-hover:translate-x-1 transition-transform duration-300" />
               </span>
