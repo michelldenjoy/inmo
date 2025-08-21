@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { viviendas as allViviendas } from "../data/viviendas";
-import CardVivienda from "../components/CardVivienda";
+import CardVivienda from "../Components/CardVivienda";
 import {
   Search,
   Filter,

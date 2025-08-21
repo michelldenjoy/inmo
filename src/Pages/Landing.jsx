@@ -1,6 +1,6 @@
 import Hero from "../Components/Hero";
-import About from "./About";
-import Mapa from "./About";
+// import About from "./About";
+// import Mapa from "./About";
 
 
 
