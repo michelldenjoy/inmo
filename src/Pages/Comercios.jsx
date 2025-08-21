@@ -1,6 +1,6 @@
-import HeroComercios from "../components/HeroComercios";
+import HeroComercios from "../Components/HeroComercios";
 import IntroComercios from "../Components/IntroComercios";
-import TextoComercios from "../components/TextoComercios";
+import TextoComercios from "../Components/TextoComercios";
 import FiltroComercios from "../Components/FiltroComercios";
 
 const Comercios = () => {
