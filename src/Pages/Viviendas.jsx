@@ -1,4 +1,4 @@
-import HeroViviendas from "../components/HeroViviendas";
+import HeroViviendas from "../Components/HeroViviendas";
 import IntroViviendas from "../Components/IntroVivienda";
 import FiltroViviendas from "../Components/FiltroViviendas";
 import TextoViviendas from "../Components/TextoViviendas";
