@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { comercios as allComercios } from "../data/comercios";
-import CardComercio from "../Components/CardComercio";
+import CardComercio from "./CardComercio";
 import {
   Search,
   Filter,
