@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { viviendas as allViviendas } from "../data/viviendas";
-import CardVivienda from "../Components/CardVivienda";
 import {
   Search,
   Filter,
@@ -11,6 +10,7 @@ import {
   Euro,
   Eye,
 } from "lucide-react";
+import CardVivienda from "../Components/CardVivienda";
 
 const FiltroViviendas = () => {
   const [estado, setEstado] = useState("");

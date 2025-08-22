@@ -40,10 +40,10 @@ const Footer = () => {
                 <ul className="space-y-4">
                   {[
                     { to: "/", label: "Inicio" },
-                    { to: "/viviendas", label: "Viviendas Premium" },
-                    { to: "/comercios", label: "Espacios Comerciales" },
+                    { to: "/viviendas", label: "Viviendas" },
+                    { to: "/comercios", label: "Comercios" },
                     { to: "/about", label: "Nuestra Historia" },
-                    { to: "/contacto", label: "Contacto Exclusivo" }
+                    { to: "/contacto", label: "Contacto" }
                   ].map((link) => (
                     <li key={link.to}>
                       <Link
@@ -96,7 +96,6 @@ const Footer = () => {
                   {[
                     { href: "https://instagram.com", icon: Instagram, label: "Instagram" },
                     { href: "https://facebook.com", icon: Facebook, label: "Facebook" },
-                    { href: "/contacto", icon: Mail, label: "Email" },
                     { href: "https://wa.me/34615161958", icon: FaWhatsapp, label: "WhatsApp" }
                   ].map((social) => (
                     <a
