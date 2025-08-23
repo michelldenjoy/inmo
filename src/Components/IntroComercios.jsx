@@ -79,8 +79,8 @@ const IntroComercios = () => {
             className="lg:col-span-4 flex justify-center"
           >
             <div className="relative">
-              <div className="w-48 h-48 bg-gradient-gold rounded-full flex items-center justify-center shadow-elegant-2xl">
-                <Store className="w-20 h-20 text-elegant-white animate-float" />
+              <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-40 lg:h-40 bg-gradient-gold rounded-full flex items-center justify-center shadow-elegant-2xl">
+                <Store className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 text-elegant-white animate-float" />
               </div>
               
               {/* Elementos orbítales - diferentes al de viviendas */}

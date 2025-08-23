@@ -15,15 +15,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen h-screen overflow-hidden">
+    <section className="relative w-full min-h-screen h-screen overflow-hidden bg-black">
       {/* Video de fondo (opcional) o imagen mejorada */}
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
           alt="Hogar de lujo"
-          className="absolute inset-0 w-full h-full object-cover scale-110 transition-transform duration-[20s] ease-out"
+          className="absolute inset-0 w-full h-full object-cover scale-110 transition-transform duration-[5s] ease-out"
           style={{
-            transform: `scale(${1.1 + scrollY * 0.0002}) translateY(${scrollY * 0.5}px)`,
+            transform: `translateY(${scrollY * 0.2}px) scale(1.1)`,
           }}
         />
         
