@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* Título principal - entrada sutil y elegante */}
         <h1 className={`text-white text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-light tracking-wide leading-tight mb-4 sm:mb-6 px-2 transition-all duration-[2000ms] ease-out delay-200 ${isLoaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-3 '}`}>
-          <span className="block">Espacios que</span>
+          <span className="block">Espacios</span>
           <span className="block bg-gradient-to-r from-white via-amber-100 to-white bg-clip-text text-transparent font-medium">
             inspiran grandeza
           </span>
@@ -52,7 +52,7 @@ const Hero = () => {
         <p className={`text-white/90 text-base sm:text-lg md:text-xl lg:text-2xl mt-2 sm:mt-4 max-w-xs sm:max-w-md md:max-w-2xl lg:max-w-3xl leading-relaxed font-light px-4 sm:px-6 md:px-0 transition-all duration-[2000ms] ease-out delay-500 ${isLoaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-2 '}`}>
           <span className="block">Descubre residencias y espacios comerciales únicos en ubicaciones privilegiadas.</span>
           <span className="block mt-1 sm:mt-2 text-white/70 text-sm sm:text-base md:text-lg">
-            MICHELL.
+            Donde cada detalle refleja tu éxito.
           </span>
         </p>
 
