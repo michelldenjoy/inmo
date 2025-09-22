@@ -33,11 +33,13 @@ const CardComercio = ({ data }) => {
         <div ref={sliderRef} className="keen-slider h-full">
           {data.imagenes.map((img, idx) => (
             <div key={idx} className="keen-slider__slide">
+              <Link to={`/comercios/${data.id}`}>
               <img
                 src={img}
                 alt={`Comercio ${data.id} - img ${idx}`}
                 className="w-full h-full object-cover rounded-t-xl sm:rounded-l-xl"
               />
+              </Link>
             </div>
           ))}
           <div className="absolute bottom-3 right-3 text-xs bg-black/20 backdrop-blur-sm text-white px-3 py-1.5 rounded-full border border-white/20">

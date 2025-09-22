@@ -33,7 +33,7 @@ const Footer = () => {
             {/* Navegacion */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-medium mb-1 text-gold-400 tracking-wide">NAVEGACIÓN</h3>
+                <h3 className="text-lg font-medium mb-1 text-gold-300 tracking-wide">NAVEGACIÓN</h3>
                 <div className="w-9 h-px bg-gradient-to-r from-gold-400 to-transparent"></div>
               </div>
               <nav>
@@ -62,7 +62,7 @@ const Footer = () => {
             {/* Contacto */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-medium mb-1 text-gold-400 tracking-wide">CONTACTO</h3>
+                <h3 className="text-lg font-medium mb-1 text-gold-300 tracking-wide">CONTACTO</h3>
                 <div className="w-9 h-px bg-gradient-to-r from-gold-400 to-transparent"></div>
               </div>
 

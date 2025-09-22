@@ -33,11 +33,13 @@ const CardVivienda = ({ data }) => {
         <div ref={sliderRef} className="keen-slider h-full">
           {data.imagenes.map((img, idx) => (
             <div key={idx} className="keen-slider__slide">
-              <img
-                src={img}
-                alt={`Vivienda ${data.id} - img ${idx}`}
-                className="w-full h-full object-cover rounded-t-xl sm:rounded-l-xl"
-              />
+              <Link to={`/viviendas/${data.id}`}>
+                <img
+                  src={img}
+                  alt={`Vivienda ${data.id} - img ${idx}`}
+                  className="w-full h-full object-cover rounded-t-xl sm:rounded-l-xl"
+                />
+              </Link>
             </div>
           ))}
           <div className="absolute bottom-3 right-3 text-xs bg-black/20 backdrop-blur-sm text-white px-3 py-1.5 rounded-full border border-white/20">
@@ -66,43 +68,54 @@ const CardVivienda = ({ data }) => {
             <h3 className="text-xl font-serif text-gray-800 leading-snug flex-1 pr-3">
               {data.titulo}
             </h3>
-            
+
             {/* Estado - Movido arriba y más elegante */}
             {data.estado && (
-              <div className={`inline-flex items-center px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200
-                ${data.estado === 'disponible'
-                  ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
-                  : 'bg-rose-50 text-rose-700 border-rose-200 hover:bg-rose-100'
-                }`}>
-                <div className={`w-2 h-2 rounded-full mr-2 ${
-                  data.estado === 'disponible' ? 'bg-emerald-500' : 'bg-rose-500'
-                }`}></div>
-                {data.estado === 'disponible' ? 'Disponible' : 'Rentado'}
+              <div
+                className={`inline-flex items-center px-3 py-1.5 text-xs font-medium rounded-full border transition-all duration-200
+                ${
+                  data.estado === "disponible"
+                    ? "bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100"
+                    : "bg-rose-50 text-rose-700 border-rose-200 hover:bg-rose-100"
+                }`}
+              >
+                <div
+                  className={`w-2 h-2 rounded-full mr-2 ${
+                    data.estado === "disponible"
+                      ? "bg-emerald-500"
+                      : "bg-rose-500"
+                  }`}
+                ></div>
+                {data.estado === "disponible" ? "Disponible" : "Rentado"}
               </div>
             )}
           </div>
 
-          <p className="text-sm text-gray-600 mb-4 leading-relaxed">{data.summary}</p>
+          <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+            {data.summary}
+          </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm text-gray-600">
             <span className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg">
-              <BedDouble size={16} className="text-gray-500" /> 
+              <BedDouble size={16} className="text-gray-500" />
               <span className="font-medium">{data.habitaciones}</span>
               <span className="text-xs text-gray-500">hab</span>
             </span>
             <span className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg">
-              <Bath size={16} className="text-gray-500" /> 
+              <Bath size={16} className="text-gray-500" />
               <span className="font-medium">{data.banos}</span>
               <span className="text-xs text-gray-500">baños</span>
             </span>
             <span className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg">
-              <Ruler size={16} className="text-gray-500" /> 
+              <Ruler size={16} className="text-gray-500" />
               <span className="font-medium">{data.metros}</span>
               <span className="text-xs text-gray-500">m²</span>
             </span>
             <span className="flex items-center gap-2 bg-gradient-to-r from-amber-50 to-yellow-50 px-3 py-2 rounded-lg border border-amber-100">
               <BsCurrencyDollar size={16} className="text-amber-600" />
-              <span className="font-semibold text-amber-800">{data.precio}</span>
+              <span className="font-semibold text-amber-800">
+                {data.precio}
+              </span>
               <span className="text-xs text-amber-600">/mes</span>
             </span>
           </div>
@@ -114,7 +127,10 @@ const CardVivienda = ({ data }) => {
             to={`/viviendas/${data.id}`}
             className="group flex items-center justify-center gap-2 bg-gradient-to-tr from-gold-200 to-gold-100 text-gray-700 px-6 py-3 rounded-lg text-sm font-medium border border-gray-200 hover:border-gray-300 hover:bg-gray-500 transition-all duration-200 hover:shadow-sm"
           >
-            <Eye size={16} className="group-hover:scale-110 transition-transform duration-200" />
+            <Eye
+              size={16}
+              className="group-hover:scale-110 transition-transform duration-200"
+            />
             <span>Ver detalles</span>
           </Link>
 
@@ -122,7 +138,10 @@ const CardVivienda = ({ data }) => {
             to="/contacto"
             className="group flex items-center justify-center gap-2 bg-gradient-to-r from-gray-800 to-gray-900 text-white px-6 py-3 rounded-lg text-sm font-medium hover:from-gray-700 hover:to-gray-800 transition-all duration-200 hover:shadow-lg hover:shadow-gray-900/25 transform hover:-translate-y-0.5"
           >
-            <MessageCircle size={16} className="group-hover:scale-110 transition-transform duration-200" />
+            <MessageCircle
+              size={16}
+              className="group-hover:scale-110 transition-transform duration-200"
+            />
             <span>Solicitar información</span>
           </Link>
         </div>

@@ -42,7 +42,7 @@ const Hero = () => {
 
         {/* Título principal - entrada sutil y elegante */}
         <h1 className={`text-white text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-light tracking-wide leading-tight mb-4 sm:mb-6 px-2 transition-all duration-[2000ms] ease-out delay-200 ${isLoaded ? 'opacity-100 translate-y-0 blur-0' : 'opacity-0 translate-y-3 '}`}>
-          <span className="block">Espacios</span>
+          <span className="block">Espacios que</span>
           <span className="block bg-gradient-to-r from-white via-amber-100 to-white bg-clip-text text-transparent font-medium">
             inspiran grandeza
           </span>
@@ -88,10 +88,10 @@ const Hero = () => {
           </Link>
 
           <Link to="/comercios" className="group w-full sm:w-auto">
-            <button className="w-full sm:w-auto relative overflow-hidden bg-gradient-to-r from from-gold-800 to-gold-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:from-gold-500 hover:to-yellow-500 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/25 min-w-0 sm:min-w-[180px] hover:scale-105 transform">
+            <button className="w-full sm:w-auto relative overflow-hidden bg-gradient-to-r from from-gold-800 to-gold-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium hover:from-gold-500 hover:to-gold-500 transition-all duration-500 hover:shadow-2xl hover:shadow-amber-500/25 min-w-0 sm:min-w-[180px] hover:scale-105 transform">
               <span className="relative z-10 flex items-center justify-center gap-2 text-sm sm:text-base">
                 <span className="hidden sm:inline">Espacios comerciales</span>
-                <span className="sm:hidden">Comerciales</span>
+                <span className="sm:hidden">Comercios</span>
                 <ChevronRight size={16} className="sm:w-[18px] sm:h-[18px] group-hover:translate-x-1 transition-transform duration-300" />
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
@@ -102,7 +102,7 @@ const Hero = () => {
             <button className="w-full sm:w-auto relative bg-transparent text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-medium border border-white/30 hover:border-white/60 transition-all duration-500 backdrop-blur-sm hover:bg-white/10 min-w-0 sm:min-w-[180px]">
               <span className="flex items-center justify-center gap-2 text-sm sm:text-base">
                 <span className="hidden sm:inline">Nuestra historia</span>
-                <span className="sm:hidden">Historia</span>
+                <span className="sm:hidden">Nuestra historia</span>
                 <Play size={14} className="sm:w-4 sm:h-4 group-hover:scale-110 transition-transform duration-300" />
               </span>
             </button>
