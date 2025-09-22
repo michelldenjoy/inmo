@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="lg:col-span-2 space-y-6">
               <div className="space-y-3">
                 <h2 className="text-3xl font-serif font-light tracking-[0.15em] bg-gradient-to-r from-gold-500 to-gold-100 bg-clip-text text-transparent">
-                  MI INMOBILIARIA
+                  AUNAR
                 </h2>  {/* linea decorativa */}
                 <div className="w-20 h-px bg-gradient-to-r from-gold-400 to-transparent"></div>
               </div>
@@ -33,7 +33,7 @@ const Footer = () => {
             {/* Navegacion */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-medium mb-1 text-gold-300 tracking-wide">NAVEGACIÓN</h3>
+                <h3 className="text-lg font-serif font-medium mb-1 text-gold-300 tracking-wide">Navegacion</h3>
                 <div className="w-9 h-px bg-gradient-to-r from-gold-400 to-transparent"></div>
               </div>
               <nav>
@@ -62,7 +62,7 @@ const Footer = () => {
             {/* Contacto */}
             <div className="space-y-6">
               <div>
-                <h3 className="text-lg font-medium mb-1 text-gold-300 tracking-wide">CONTACTO</h3>
+                <h3 className="text-lg font-serif font-medium mb-1 text-gold-300 tracking-wide">Contacto</h3>
                 <div className="w-9 h-px bg-gradient-to-r from-gold-400 to-transparent"></div>
               </div>
 
@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <Mail size={16} className="text-gold-400 mt-1 flex-shrink-0" />
                   <a href="mailto:info@miinmobiliaria.com" className="text-gray-300 hover:text-gold-400 transition text-sm">
-                    info@miinmobiliaria.com
+                    info@aunar.com
                   </a>
                 </div>
 
@@ -129,7 +129,7 @@ const Footer = () => {
           {/* Footer bottom */}
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-500 text-sm font-light">
-              © {new Date().getFullYear()} Mi Inmobiliaria. Todos los derechos reservados.
+              © {new Date().getFullYear()} Aunar. Todos los derechos reservados.
             </div>
 
             <div className="flex items-center gap-2 text-sm text-gray-500">
