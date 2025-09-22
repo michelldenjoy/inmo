@@ -84,7 +84,7 @@ const Footer = () => {
                 <div className="flex items-start gap-3">
                   <MapPin size={16} className="text-gold-400 mt-1 flex-shrink-0" />
                   <span className="text-gray-300 text-sm">
-                    Ubicacion privilegiada<br />
+                    Ubicaciones privilegiadas<br />
                   
                   </span>
                 </div>
