@@ -162,7 +162,7 @@ const Contacto = () => {
                   type="submit"
                   className="group relative inline-flex items-center justify-center px-12 py-4 bg-gradient-to-r from-[#c3a265] to-[#b89554] text-white text-lg font-light tracking-wider rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 overflow-hidden"
                 >
-                  <span className="relative z-10">Comenzar mi búsqueda</span>
+                  <span className="relative z-10">Consultar</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#b89554] to-[#a68643] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                 </button>
                 <p className="mt-4 text-sm text-gray-500 font-light">
