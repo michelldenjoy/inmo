@@ -62,7 +62,7 @@ const Contacto = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Formulario */}
             <div className="bg-white/90 backdrop-blur-sm p-12 md:p-16 rounded-[2rem] shadow-2xl border border-white/50">
-              {/* Header elegante */}
+              {/* Header */}
               <div className="text-center mb-12">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#c3a265] to-[#b89554] rounded-full mb-6 shadow-lg">
                   <Home className="w-8 h-8 text-white" />
@@ -135,12 +135,12 @@ const Contacto = () => {
                   <div className="absolute left-0 bottom-0 h-0.5 w-0 bg-gradient-to-r from-[#c3a265] to-[#b89554] transition-all duration-500 peer-focus:w-full"></div>
                 </div>
 
-                {/* Tipo de propiedad con iconos */}
+                {/* Tipo de propiedad */}
                 <div className="space-y-6">
                   <label className="block text-gray-600 text-lg font-light tracking-wide">
                     Tipo de propiedad de interés
                   </label>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {[
                       { value: "vivienda", label: "Vivienda de lujo", icon: Home },
                       { value: "comercio", label: "Local comercial", icon: Building },
@@ -184,7 +184,7 @@ const Contacto = () => {
                   <div className="absolute left-0 bottom-0 h-0.5 w-0 bg-gradient-to-r from-[#c3a265] to-[#b89554] transition-all duration-500 peer-focus:w-full"></div>
                 </div>
 
-                {/* Botón elegante */}
+                {/* Botón submit */}
                 <div className="text-center pt-8">
                   <button
                     type="submit"

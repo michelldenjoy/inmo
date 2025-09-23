@@ -47,7 +47,7 @@ const AboutUs = () => {
             <div className="w-24 h-px bg-gold-300 mx-auto my-16"></div>
             
             <blockquote className="font-serif text-xl md:text-2xl text-elegant-gray-700 italic font-light leading-relaxed">
-              "No somos solo encontramos tu espacio. Somos arquitectos de nuevos capítulos 
+              "No solo encontramos tu espacio. Somos arquitectos de nuevos capítulos 
               en la vida de las personas que confían en nosotros."
             </blockquote>
           </div>
