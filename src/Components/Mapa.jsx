@@ -1,27 +1,27 @@
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import React, { useEffect, useRef } from 'react';
+import { Wrapper } from '@googlemaps/react-wrapper';
 
-const containerStyle = {
-  width: '100%',
-  height: '400px'
+const MapComponent = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (ref.current) {
+      new window.google.maps.Map(ref.current, {
+        center: { lat: 40.4168, lng: -3.7038 }, // Madrid
+        zoom: 13,
+      });
+    }
+  }, []);
+
+  return <div ref={ref} style={{ width: '100%', height: '400px' }} />;
 };
 
-const center = {
-  lat: 40.4168, // Madrid
-  lng: -3.7038
-};
-
-function Mapa() {
+const SimpleMap = () => {
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAtxit6HPeuCWgxo0TLb6HnJlxQVVIS9eU">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-      >
-        {/* Puedes agregar marcadores u otros elementos aquí */}
-      </GoogleMap>
-    </LoadScript>
+    <Wrapper apiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
+      <MapComponent />
+    </Wrapper>
   );
-}
+};
 
-export default Mapa;
+export default SimpleMap;
