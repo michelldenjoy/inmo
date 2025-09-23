@@ -145,8 +145,8 @@ const FiltroComercios = () => {
                 className="w-full bg-white border-2 border-elegant-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-500 transition-all duration-200 hover:border-gold-300 disabled:opacity-50"
               >
                 <option value="">Cualquier estado</option>
-                <option value="disponible">✅ Disponible</option>
-                <option value="rentado">🏢 Rentado</option>
+                <option value="disponible"> Disponible</option>
+                <option value="rentado"> Rentado</option>
               </select>
             </div>
 
@@ -366,7 +366,7 @@ const FiltroComercios = () => {
         )}
       </div>
 
-      {/* CSS para el slider personalizado */}
+      {/* CSS personalizado para el slider */}
       <style>{`
         .slider-thumb::-webkit-slider-thumb {
           appearance: none;

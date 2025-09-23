@@ -152,8 +152,8 @@ const FiltroViviendas = () => {
                 className="w-full bg-white border-2 border-elegant-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-gold-500 transition-all duration-200 hover:border-gold-300 disabled:opacity-50"
               >
                 <option value="">Cualquier estado</option>
-                <option value="disponible">✅ Disponible</option>
-                <option value="rentado">🏠 Rentado</option>
+                <option value="disponible"> Disponible</option>
+                <option value="rentado"> Rentado</option>
               </select>
             </div>
 
@@ -279,7 +279,7 @@ const FiltroViviendas = () => {
                   <span className="hidden sm:inline">Limpiar Filtros</span>
                 </button>
               </div>
-              <div className="flex flex-wrap gap-2"> //JS//
+              <div className="flex flex-wrap gap-2">
                 {estado && (
                   <span className="inline-flex items-center gap-1 bg-gold-100 text-black border border-gold-300 px-3 py-1 rounded-full text-sm">
                     Estado: {estado} 
