@@ -3,7 +3,7 @@ import { Store, TrendingUp, MapPin, Zap } from "lucide-react";
 
 const IntroComercios = () => {
   return (
-    <div className="py-12 bg-elegant-white relative">
+    <div className="py-20 bg-elegant-white relative">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -25,7 +25,7 @@ const IntroComercios = () => {
                 initial={{ opacity: 0, scaleX: 0 }}
                 animate={{ opacity: 1, scaleX: 1 }}
                 transition={{ duration: 1.5, delay: 0.8 }}
-                className="text-4xl md:text-6xl font-bold text-gold-500 -mt-4 origin-left"
+                className="text-4xl md:text-6xl font-bold text-gold-500 -mt-1 ml-9 origin-left"
               >
                 Estratégicos
               </motion.h2>

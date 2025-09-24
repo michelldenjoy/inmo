@@ -25,7 +25,7 @@ const IntroVivienda = () => {
                 initial={{ opacity: 0, scaleX: 0 }}
                 animate={{ opacity: 1, scaleX: 1 }}
                 transition={{ duration: 1.5, delay: 0.8 }}
-                className="text-4xl md:text-6xl font-bold text-gold-500 -mt-4 origin-left"
+                className="text-4xl md:text-6xl font-bold text-gold-500 -mt-1 ml-9 origin-left"
               >
                 Exclusivos
               </motion.h2>
