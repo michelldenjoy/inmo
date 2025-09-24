@@ -7,7 +7,7 @@ import {
   X,
   Building,
   Ruler,
-  Euro,
+  DollarSign,
   Eye,
   MapPin,
 } from "lucide-react";
@@ -203,7 +203,7 @@ const FiltroComercios = () => {
             {/* Precio */}
             <div className="space-y-2">
               <label className="flex items-center gap-2 text-sm font-medium text-black">
-                <Euro size={16} className="text-gold-600" />
+                <DollarSign size={16} className="text-gold-600" />
                 Precio máximo:{" "}
                 <span className="font-bold text-gold-600">
                   ${precioMax}/mes
