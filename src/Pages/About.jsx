@@ -39,7 +39,6 @@ const AboutUs = () => {
         >
           <div className="max-w-4xl mx-auto text-center">
             <p className="font-sans text-2xl md:text-3xl text-elegant-gray-800 leading-relaxed font-light mb-12">
-              Durante más de dos décadas, hemos sido custodios de los sueños más importantes: 
               <span className="text-gold-600 font-medium"> el hogar perfecto</span> y 
               <span className="text-gold-600 font-medium"> el futuro empresarial</span> de nuestros clientes.
             </p>
