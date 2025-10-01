@@ -8,7 +8,7 @@ const Footer = () => {
       {/* margen decorativo */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-300 to-transparent opacity-60"></div>
       {/* Contenido principal */}
-      <div className="py-20 px-6 relative">
+      <div className="py-10 px-6 relative">
         <div className="max-w-7xl mx-auto">
           {/* Grid principal */}
           <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-12 mb-16">
@@ -18,7 +18,7 @@ const Footer = () => {
                 <h2 className="text-3xl font-serif font-light tracking-[0.15em] bg-gradient-to-r from-gold-500 to-gold-100 bg-clip-text text-transparent">
                   AUNAR
                 </h2>  {/* linea decorativa */}
-                <div className="w-20 h-px bg-gradient-to-r from-gold-400 to-transparent"></div>
+                <div className="w-40 h-px bg-gradient-to-r from-gold-400 to-transparent"></div>
               </div>
               <p className="text-gray-300 text-base leading-7 max-w-md font-light">
                 Espacios pensados para vivir y emprender. Alquiler de viviendas y locales
@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
 
           {/* Línea divisoria */}
-          <div className="relative mb-8">
+          <div className="relative mb-4">
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-800"></div>
             </div>
@@ -140,7 +140,7 @@ const Footer = () => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noreferrer"
-                className="text-gold-400 hover:text-gold-300 transition font-medium"
+                className="text-gold-400 hover:text-gold-300 transition font-ligth"
               >
                 @michelldenjoy
               </a>
